@@ -1,0 +1,233 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #555;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: #444;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-text h1 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.logo-text p {
+    font-size: 11px;
+    color: #ccc;
+}
+
+.nav {
+    display: flex;
+    gap: 25px;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.about-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 80px;
+    gap: 40px;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
+}
+
+.about-img img {
+    border: 3px solid #fff;
+    transition: transform 0.3s ease;
+}
+
+.about-img img:hover {
+    transform: scale(1.03);
+}
+
+.about-text {
+    flex: 1;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.about-text h2 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #eee;
+}
+
+.about-stats ul {
+    list-style: none;
+    font-size: 11px;
+    color: #ccc;
+    line-height: 1.8;
+}
+
+.works-row {
+    padding: 40px 80px;
+    border-bottom: 1px solid #666;
+}
+
+.works-title {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #eee;
+}
+
+.works-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.work-card {
+    flex: 1;
+    overflow: hidden;
+}
+
+.work-card img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.work-card img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+.coffee-row {
+    display: flex;
+    padding: 40px 80px;
+    gap: 20px;
+    border-bottom: 1px solid #666;
+}
+
+.coffee-card {
+    flex: 1;
+    height: 220px;
+    background: url('big480924.jpg') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    border: 3px solid #fff;
+}
+
+.coffee-card h3, .coffee-card p {
+    background: rgba(255, 255, 255, 0.85);
+    color: #222;
+    padding: 8px 12px;
+}
+
+.coffee-card h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.coffee-card p {
+    font-size: 11px;
+}
+
+.coffee-gallery {
+    flex: 1;
+    height: 220px;
+    background: url('vertical-shot-some-beautiful-buildings-captured-through-some-fences_181624-18331.avif') center/cover no-repeat;
+    border: 3px solid #fff;
+}
+
+.landscape-row {
+    height: 380px;
+    background: url('depositphotos_2843113-stock-photo-city-landmark-of-hong-kong.webp') center/cover no-repeat;
+    display: flex;
+    align-items: flex-start;
+    padding: 40px 80px;
+    border-bottom: 1px solid #666;
+}
+
+.landscape-content {
+    background: rgba(255, 255, 255, 0.85);
+    color: #222;
+    padding: 15px 20px;
+    max-width: 350px;
+    border: 3px solid #fff;
+}
+
+.landscape-content h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.landscape-content p {
+    font-size: 11px;
+}
+
+.footer-row {
+    padding: 30px 80px;
+    text-align: center;
+}
+
+.footer-row p {
+    font-size: 13px;
+    margin-bottom: 15px;
+    color: #ccc;
+}
+
+.insta-grid {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.insta-item {
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.insta-item:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+    z-index: 2;
+}
+
+.insta-item:nth-child(1) { background-image: url('big480924.jpg'); }
+.insta-item:nth-child(2) { background-image: url('images.jpg'); }
+.insta-item:nth-child(3) { background-image: url('depositphotos_2843113-stock-photo-city-landmark-of-hong-kong.webp'); }
+.insta-item:nth-child(4) { background-image: url('347842060360025.jpg'); }
+.insta-item:nth-child(5) { background-image: url('vertical-shot-some-beautiful-buildings-captured-through-some-fences_181624-18331.avif'); }
+.insta-item:nth-child(6) { background-image: url('33-samykh-neobychnykh-zdaniya-mira-chast-1-13.jpg'); }
+
+.copyright {
+    font-size: 10px;
+    color: #888;
+}
